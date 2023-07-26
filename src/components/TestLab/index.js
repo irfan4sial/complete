@@ -210,28 +210,28 @@ const TestLab = () => {
             <div className='sm:mt-[46px] mt-[26px] xl:px-[48px]'>
               <div className='sm:mt-[20px] mt-[26px] xl:px-[74px]'>
                 <h1 className='sm:text-[28px] text-[28px] mb-[12px] font-bold text-white'>Test Lab</h1>
-                <p className='text-[#9B9C9E] sm:text-[16px] text-[16px] font-[500] tracking-[.15px] leading-[24px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Ut porttitor.</p>
+                <p className='md:w-[80%] lg:w-[80%] text-[#9B9C9E] sm:text-[16px] text-[16px] font-[500] tracking-[.15px] leading-[24px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor.</p>
               </div>
-              <div className=' mt-[70px] xl:flex justify-between grid md:grid-cols-12 sm:grid-cols-3 grid-cols-2 gap-[10px]'>
+              <div className=' mt-[60px] xl:flex justify-between grid md:grid-cols-12 sm:grid-cols-3 grid-cols-2 gap-[10px]'>
                 <div>
-                    <div className='mb-[14px] ml-[4.6rem]'>
-                      <p className='2xl:text-[18px] xl:text-[16px] text-[14px] font-semibold text-white text-left'>Recently Used</p>
-                    </div>
-                    <Carousel data={RecentlyUsed}/>
+                  <div className='sm:ml-0 mb-[14px] md:ml-[4.6rem] lg:ml-[4.6rem]'>
+                    <p className='2xl:text-[18px] xl:text-[16px] text-[14px] font-semibold text-white text-left w-[350px]'>Recently Used</p>
+                  </div>
+                  <Carousel data={RecentlyUsed}/>
                 </div>
               </div>
               <div className='mt-[30px] xl:flex justify-between grid md:grid-cols-12 sm:grid-cols-3 grid-cols-2 gap-[10px]'>
                 <div>
-                  <div className='mb-[14px] ml-[4.6rem]'>
-                    <p className='2xl:text-[18px] xl:text-[16px] text-[14px] font-semibold text-white text-left'>Popular</p>
+                  <div className='sm:ml-0 mb-[14px] md:ml-[4.6rem] lg:ml-[4.6rem]'>
+                    <p className='2xl:text-[18px] xl:text-[16px] text-[14px] font-semibold text-white text-left w-[350px]'>Popular</p>
                   </div>
                   <Carousel data={Popular}/>
                 </div>
               </div>
               <div className='mt-[30px] xl:flex justify-between grid md:grid-cols-12 sm:grid-cols-3 grid-cols-2 gap-[10px]'>
                 <div>
-                  <div className='mb-[14px] ml-[4.6rem]'>
-                    <p className='2xl:text-[18px] xl:text-[16px] text-[14px] font-semibold text-white text-left'>Other Tests You May Want to Take</p>
+                  <div className='sm:ml-0 mb-[14px] md:ml-[4.6rem] lg:ml-[4.6rem]'>
+                    <p className='2xl:text-[18px] xl:text-[16px] text-[14px] font-semibold text-white text-left w-[350px]'>Other Tests You May Want to Take</p>
                   </div>
                   <Carousel data={OtherTests}/>
                 </div>

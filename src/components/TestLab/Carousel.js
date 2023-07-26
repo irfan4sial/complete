@@ -45,7 +45,7 @@ export default class Carousel extends Component {
   render() {
     const menu = this.menuItems;
     return (
-      <div className="w-[900px] h-[175px] m-[0px_18px]">
+      <div className="w-[350px] md:w-[900px] lg:w-[900px] h-[175px] sm:m-[0px] md:m-[0px_18px] lg:m-[0px_18px]">
         <ScrollMenu
           data={menu}
           arrowLeft={ArrowLeft}
