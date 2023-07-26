@@ -1,7 +1,5 @@
 import React from 'react'
-import Platform from '../../components/Platform/Platform';
 import TestLab from '../../components/TestLab';
-import Sidebar from '../../components/Sidebar/Sidebar'
 
 const TestLabPage = () => {
     return (

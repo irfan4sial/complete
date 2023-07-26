@@ -200,14 +200,12 @@ const Reasoning = [
 
 const Platform = () => {
     const [active, setActive] = useState(false);
-    console.log(active, '--------------->>>>>>>>>>>')
     const [open, setOpen] = useState({
         planned: true,
         start: false,
         continue: false,
         test: false
     })
-    console.log('open', open)
     const handleClick = (e) => {
         if (e === 'planned') {
             setOpen({ planned: true })

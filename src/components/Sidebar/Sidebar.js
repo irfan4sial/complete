@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Avatar from '../../Assets/Images/Avatar.png';
 import setting from '../../Assets/Images/setting.png';
 import search from '../../Assets/svg/search.svg';
@@ -11,6 +12,7 @@ import octagon from '../../Assets/svg/octagon.svg';
 import close from '../../Assets/Images/close.png';
 
 const Sidebar = ({ active, setActive }) => {
+  const navigate = useNavigate();
     console.log('active', active)
     return (
         <>
@@ -50,7 +52,7 @@ const Sidebar = ({ active, setActive }) => {
                             <img src={dashboard} alt='dashboard' className='shadow-[0px_10px_15px_-3px_#B6F09C29]' />
                             <p className='text-[#E8E9E9] text-[14px] font-semibold'>Analytics & Performance</p>
                         </div>
-                        <div className='flex cursor-pointer items-center gap-[16px] px-[16px] mt-[29px]'>
+                        <div className='flex cursor-pointer items-center gap-[16px] px-[16px] mt-[29px]' onClick={() => navigate('/test-lab')}>
                             <img src={bulb} alt='bulb' className='shadow-[0px_10px_15px_-3px_#B6F09C29]' />
                             <p className='text-[#E8E9E9] text-[14px] font-semibold'>Test Lab</p>
                         </div>
