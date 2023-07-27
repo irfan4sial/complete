@@ -1,6 +1,6 @@
 import React from 'react'
 import Platform from '../../components/Platform/Platform'
-import Sidebar from '../../components/Sidebar/Sidebar'
+import Sidebar from '../../components/Sidebar/Sidebar';
 
 const Dashboard = () => {
     return (
