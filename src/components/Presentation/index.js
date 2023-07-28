@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import bell from '../../Assets/svg/bell.svg';
 import clock from '../../Assets/svg/clock.svg';
 import share from '../../Assets/svg/share.svg';
@@ -10,17 +10,19 @@ import Category from './Category';
 import UploadModal from './UploadModal';
 import { BtnMenu, ImagesData, DocumentData, IdeasData } from './data';
 import ManageViewModal from './ManageViewModal';
+import TabsModal from './TabsModal';
 
 const Presentation = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
   const [openManageModal, setOpenManageModal] = useState(false);
+  const [openTabModal, setOpenTabModal] = useState(false);
   
 
-  const handleSubmitAnswer = () => {
-    navigate('/questions-result')
-  }
+  // const handleSubmitAnswer = () => {
+  //   navigate('/questions-result')
+  // }
 
   const handleOpenModel = (item) => {
     console.log("Modal =>", item)
@@ -28,6 +30,8 @@ const Presentation = () => {
       setOpen(true);
     }else if(item === 'Share') {
       setOpenManageModal(true)
+    } else if(item === 'Export') {
+      setOpenTabModal(true);
     }
   }
 
@@ -86,6 +90,7 @@ const Presentation = () => {
       </div>
       {open && <UploadModal isOpen={open} setIsOpen={setOpen}/>}
       {openManageModal && <ManageViewModal isOpen={openManageModal} setIsOpen={setOpenManageModal}/>}
+      {openTabModal && <TabsModal isOpen={openTabModal} setIsOpen={setOpenTabModal}/>}
     </>
   )
 }

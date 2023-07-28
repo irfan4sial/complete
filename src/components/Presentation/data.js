@@ -4,6 +4,12 @@ import code from '../../Assets/svg/code.svg';
 import msg from '../../Assets/svg/blogcontent.svg';
 import selectPresent from '../../Assets/svg/selectPresent.svg';
 import chatImage from '../../Assets/svg/image.png';
+import AprImage1 from '../../Assets/svg/12_apr_1.svg';
+import AprImage2 from '../../Assets/svg/12_apr_2.svg';
+import AprImage3 from '../../Assets/svg/12_apr_3.svg';
+import JabraImage1 from '../../Assets/svg/jabra_1.svg';
+import JabraImage2 from '../../Assets/svg/jabra_2.svg';
+import JabraImage3 from '../../Assets/svg/jabra_3.svg';
 
 export const BtnMenu = [
   {
@@ -40,32 +46,32 @@ export const ImagesData = [
   {
     title: 'Title',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-    msgCount: 4,
+    msgCount: 12,
     images: [
       {
-        img: ''
+        img: JabraImage1
       },
       {
-        img: ''
+        img: JabraImage2
       },
       {
-        img: ''
+        img: JabraImage3
       }
     ]
   },
   {
     title: 'Title',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-    msgCount:11,
+    msgCount:27,
     images: [
       {
-        img: ''
+        img: AprImage1
       },
       {
-        img: ''
+        img: AprImage2
       },
       {
-        img: ''
+        img: AprImage3
       }
     ]
   }
@@ -75,66 +81,26 @@ export const DocumentData = [
   {
     title: 'Title',
     desc: '3 documents, 43832 words',
-    msgCount: 14,
-    images: [
-      {
-        img: ''
-      },
-      {
-        img: ''
-      },
-      {
-        img: ''
-      }
-    ]
+    msgCount: 0,
+    images: []
   },
   {
     title: 'Title',
     desc: '1 document, 18745 words',
     msgCount: 0,
-    images: [
-      {
-        img: ''
-      },
-      {
-        img: ''
-      },
-      {
-        img: ''
-      }
-    ]
+    images: []
   },
   {
     title: 'Title',
     desc: '5 documents, 23992 words',
-    msgCount: 40,
-    images: [
-      {
-        img: ''
-      },
-      {
-        img: ''
-      },
-      {
-        img: ''
-      }
-    ]
+    msgCount: 0,
+    images: []
   },
   {
     title: 'Title',
     desc: '2 documents, 10384 words',
-    msgCount: 10,
-    images: [
-      {
-        img: ''
-      },
-      {
-        img: ''
-      },
-      {
-        img: ''
-      }
-    ]
+    msgCount: 0,
+    images: []
   }
 ]
 
@@ -142,66 +108,26 @@ export const IdeasData = [
   {
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
     desc: '',
-    msgCount: 12,
-    images: [
-      {
-        img: ''
-      },
-      {
-        img: ''
-      },
-      {
-        img: ''
-      }
-    ]
+    msgCount: 0,
+    images: []
   },
   {
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
     desc: '1 document, 18745 words',
     msgCount: 0,
-    images: [
-      {
-        img: ''
-      },
-      {
-        img: ''
-      },
-      {
-        img: ''
-      }
-    ]
+    images: []
   },
   {
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
     desc: '',
-    msgCount: 40,
-    images: [
-      {
-        img: ''
-      },
-      {
-        img: ''
-      },
-      {
-        img: ''
-      }
-    ]
+    msgCount: 0,
+    images: []
   },
   {
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
     desc: '2 documents, 10384 words',
-    msgCount: 110,
-    images: [
-      {
-        img: ''
-      },
-      {
-        img: ''
-      },
-      {
-        img: ''
-      }
-    ]
+    msgCount: 0,
+    images: []
   }
 ]
 

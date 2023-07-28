@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import msg from '../../Assets/svg/blogcontent.svg';
 import Dropdown from "../Dropdown";
+
 
 const Category = (props) => {
   const { data, type, handleOpenModel } = props;
@@ -25,6 +26,13 @@ const Category = (props) => {
                 <p className='text-white mb-4 text-[16px] font-[600]'>{item.title}</p>
                 <p className='text-[#9B9C9E] text-[14px] font-[500]'>{item.desc}</p>
               </div>
+
+              <div className='flex flex-row mt-1 p-[0px_24px_24px]'>
+                {item.images?.map((d, key) => (
+                  <img key={`url_${key}_${index}`} src={d.img} alt='' className='w-[80px] h-[80px] m-[12px_8px_0px_0px]' />
+                ))}
+              </div>
+
               <hr className='border-[#1A1D21]' />
               <div className='flex flex-row p-[24px] justify-center'>
                 <p className='text-white mr-2'>{item.msgCount}</p>
