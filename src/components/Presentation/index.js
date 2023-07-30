@@ -74,7 +74,7 @@ const Presentation = () => {
           <div className='flex flex-wrap sm:p-[0px_24px_24px] p-[0px_14px_12px_14px] items-start sm:ml-0'>
             {BtnMenu.map((data, key) =>
               <div key={`btn-${key}`}>
-                <button key={key} className='border-[1px] border-[#FFFFFF14] w-auto rounded-xl xl:p-[0.67rem] p-[10px] flex gap-3 justify-between items-center text-start mx-auto sm:mt-0 mt-2 mr-2 sm:mr-[33.6px] 2xl:text-[16px] text-[13px]' style={{ backgroundImage: data.bgColor, color: data.color }}><img className='w-[28.5px] h-[28.5px]' src={data.leftIcon} alt='arrow' /> {data.btn} <img src={data.img} alt='arrow' /></button>
+                <button key={key} className='border-[1px] border-none w-auto rounded-xl xl:p-[19px_14.48px] p-[10px] flex gap-3 justify-between items-center text-start mx-auto sm:mt-0 mt-2 mr-2 sm:mr-[33.6px] 2xl:text-[16px] text-[13px]' style={{ backgroundImage: data.bgColor, color: data.color }}><img className='w-[28.5px] h-[28.5px]' src={data.leftIcon} alt='arrow' /> {data.btn} <img src={data.img} alt='arrow' /></button>
               </div>
             )}
           </div>

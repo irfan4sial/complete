@@ -9,6 +9,8 @@ import TestLabPage from './pages/TestLabPage';
 import TestLabExamplePage from './pages/TestLabExamplePage';
 import QuestionResult from './pages/TestLabExamplePage/QuestionResult';
 import GPTPresentation from './pages/GPTPresentation.js';
+import ChatPrompt from './pages/ChatPrompt';
+import ChatAlgebra from './pages/ChatAlgebra';
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/test-lab-example" element={<TestLabExamplePage />} />
         <Route path="/questions-result" element={<QuestionResult />} />
         <Route path="/gpt-presentation" element={<GPTPresentation />} />
+        <Route path="/chat-prompt" element={<ChatPrompt />} />
+        <Route path="/chat-algebra" element={<ChatAlgebra />} />
       </Routes>
     </Router>
   );

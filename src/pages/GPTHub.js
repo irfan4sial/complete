@@ -7,7 +7,7 @@ import share from '../Assets/svg/share.svg';
 import code from '../Assets/svg/code.png';
 import presentation from '../Assets/svg/presentation.png';
 import blogcontent from '../Assets/svg/blogcontent.png';
-import Image from '../Assets/svg/image.png';
+import ImageIcon from '../Assets/svg/image.png';
 import send from '../Assets/svg/send.svg';
 import mic from '../Assets/svg/mic.svg';
 
@@ -102,7 +102,7 @@ const GPTHub = () => {
               </p>
             </div>
             <div className='bg-[linear-gradient(145deg,_#d7eded29_0%,_#ccebeb00_100%)] p-[20px_15px] border-t-[1px] border-[#ffffff14] rounded-[12px] flex items-center justify-start flex-col min-h-[180px] 2xl:min-h-[170px]'>
-              <img src={Image} alt='Image' />
+              <img src={ImageIcon} alt='image icon' />
               <h4 className='text-[#FFFFFF] text-[18px] font-medium mt-[14px]'>
                 Image
               </h4>

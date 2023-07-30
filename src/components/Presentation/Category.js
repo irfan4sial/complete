@@ -1,7 +1,15 @@
 import React from "react";
 import msg from '../../Assets/svg/blogcontent.svg';
 import Dropdown from "../Dropdown";
+import UploadIcon from '../../Assets/svg/uploadIcon.svg';
+import ShareIcon from '../../Assets/svg/shareIcon.svg';
+import ExportIcon from '../../Assets/svg/exportIcon.svg';
 
+const links = [
+  { img: UploadIcon, label: 'Upload' },
+  { img: ShareIcon, label: 'Share' },
+  { img: ExportIcon, label: 'Export' }
+]
 
 const Category = (props) => {
   const { data, type, handleOpenModel } = props;
@@ -12,7 +20,11 @@ const Category = (props) => {
         <div className="m-6 mb-4 flex flex-wrap justify-between">
           <p className="text-white font-[700] text-[20px]">{type}</p>
           <div>
-            <Dropdown handleOpenModel={handleOpenModel}/>
+            <Dropdown 
+              handleOpenModel={handleOpenModel} 
+              links={links}
+              defultValue="Modify"
+            />
           </div>
         </div>
         <div className={`${type === 'Ideas' ? 'pt-[0.5px]' : 'pt-[0.5px] sm:border-r-[1px] sm:border-r-[#1A1D21]'}`}>
