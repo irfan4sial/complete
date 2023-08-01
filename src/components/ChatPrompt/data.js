@@ -1,10 +1,6 @@
-import arrow from '../../Assets/svg/arrow-right-gray.svg';
-import arrow2 from '../../Assets/svg/arrow.svg';
-import code from '../../Assets/svg/code.svg';
-
 import { 
   MathIcon, HistoryIcon, FilterIcon, ArtApp, AlJabraIcon, FunctionIcon, ArrowRightIcon,
-  CalculusIcon, AnglesIcon, FractionsIcon, FunctionsIcon, GeometryIcon
+  CalculusIcon, AnglesIcon, FractionsIcon, FunctionsIcon, GeometryIcon, code, arrow2, arrow
 } from '../Icons';
 
 export const BtnMenu = [

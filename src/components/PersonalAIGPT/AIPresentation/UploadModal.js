@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
-import crossIcon from '../../Assets/svg/crossIcon.svg';
-import BrowseIcon from '../../Assets/svg/browseIcon.svg';
+
+import { CrossIcon, BrowseIcon } from '../../Icons';
 
 const UploadModal = (props) => {
   const { isOpen, setIsOpen } = props;
@@ -51,7 +51,7 @@ const UploadModal = (props) => {
                       </div>
                     </div>
                     <div>
-                      <button onClick={() => setIsOpen(false)} className='hover:bg-[#363A3D] w-[26px] h-[40px]'><img src={crossIcon} alt='close' /></button>
+                      <button onClick={() => setIsOpen(false)} className='hover:bg-[#363A3D] w-[26px] h-[40px]'><img src={CrossIcon} alt='close' /></button>
                     </div>
                   </Dialog.Title>
 

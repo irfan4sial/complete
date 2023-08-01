@@ -1,13 +1,11 @@
 import React from "react";
-import msg from '../../Assets/svg/blogcontent.svg';
-import Dropdown from "../Dropdown";
-import UploadIcon from '../../Assets/svg/uploadIcon.svg';
-import ShareIcon from '../../Assets/svg/shareIcon.svg';
-import ExportIcon from '../../Assets/svg/exportIcon.svg';
+import Dropdown from "../../Dropdown";
+
+import { UploadIcon, ShareIcon2, ExportIcon, MsgIcon } from "../../Icons";
 
 const links = [
   { img: UploadIcon, label: 'Upload' },
-  { img: ShareIcon, label: 'Share' },
+  { img: ShareIcon2, label: 'Share' },
   { img: ExportIcon, label: 'Export' }
 ]
 
@@ -48,7 +46,7 @@ const Category = (props) => {
               <hr className='border-[#1A1D21]' />
               <div className='flex flex-row p-[24px] justify-center'>
                 <p className='text-white mr-2'>{item.msgCount}</p>
-                <img className='w-[16px]' src={msg} alt='' />
+                <img className='w-[16px]' src={MsgIcon} alt='' />
               </div>
             </div>
           ))}

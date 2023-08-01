@@ -1,15 +1,7 @@
-import arrow from '../../Assets/svg/arrow-right-gray.svg';
-import arrow2 from '../../Assets/svg/arrow.svg';
-import code from '../../Assets/svg/code.svg';
-import msg from '../../Assets/svg/blogcontent.svg';
-import selectPresent from '../../Assets/svg/selectPresent.svg';
-import chatImage from '../../Assets/svg/image.png';
-import AprImage1 from '../../Assets/svg/12_apr_1.svg';
-import AprImage2 from '../../Assets/svg/12_apr_2.svg';
-import AprImage3 from '../../Assets/svg/12_apr_3.svg';
-import JabraImage1 from '../../Assets/svg/jabra_1.svg';
-import JabraImage2 from '../../Assets/svg/jabra_2.svg';
-import JabraImage3 from '../../Assets/svg/jabra_3.svg';
+import { 
+  PresentationIcon, SelectedMsgIcon, MsgIcon, arrow, arrow2, code,
+  selectPresent, chatImage, AprImage1, AprImage2, AprImage3, JabraImage1, JabraImage2, JabraImage3
+} from '../../Icons';
 
 export const BtnMenu = [
   {
@@ -17,28 +9,67 @@ export const BtnMenu = [
     color: '#fff',
     leftIcon: code,
     img: arrow,
-    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))'
+    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))',
+    url: '/personal-ai/code'
   },
   {
     btn: 'Presentation',
     color: '#000',
     leftIcon: selectPresent,
     img: arrow2,
-    bgColor: 'var(--gradients-green-blue-day-blue-500, linear-gradient(225deg, #4D62E5 0%, #87DDEE 45.31%, #B6F09C 100%))'
+    bgColor: 'var(--gradients-green-blue-day-blue-500, linear-gradient(225deg, #4D62E5 0%, #87DDEE 45.31%, #B6F09C 100%))',
+    url: '/personal-ai/presentation'
   },
   {
     btn: 'Blog Content',
     color: '#fff',
-    leftIcon: msg,
+    leftIcon: MsgIcon,
     img: arrow,
-    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))'
+    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))',
+    url: '/personal-ai/blog-content'
   },
   {
     btn: 'Image',
     color: '#fff',
     leftIcon: chatImage,
     img: arrow,
-    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))'
+    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))',
+    url: '/personal-ai/images'
+  }
+];
+
+export const BlogContentMenu = [
+  {
+    btn: 'Code',
+    color: '#fff',
+    leftIcon: code,
+    img: arrow,
+    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))',
+    url: '/personal-ai/code'
+  },
+  {
+    btn: 'Presentation',
+    color: '#fff',
+    leftIcon: PresentationIcon,
+    img: arrow,
+    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))',
+    url: '/personal-ai/presentation'
+  },
+  {
+    btn: 'Blog Content',
+    color: '#000',
+    leftIcon: SelectedMsgIcon,
+    img: arrow2,
+    bgColor: 'var(--gradients-green-blue-day-blue-500, linear-gradient(225deg, #4D62E5 0%, #87DDEE 45.31%, #B6F09C 100%))',
+    url: '/personal-ai/blog-content'
+  },
+  {
+    btn: 'Image',
+    color: '#fff',
+    leftIcon: chatImage,
+    img: arrow,
+    bgColor: 'var(--glass-fill, linear-gradient(145deg, rgba(215, 237, 237, 0.16) 0%, rgba(204, 235, 235, 0.00) 100%))',
+    url: '/personal-ai/images'
   }
 ];
 

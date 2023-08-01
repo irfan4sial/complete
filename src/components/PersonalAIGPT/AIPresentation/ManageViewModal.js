@@ -2,14 +2,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import styled from 'styled-components';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import crossIcon from '../../Assets/svg/crossIcon.svg';
-import ShareIcon from '../../Assets/svg/shareIcon.svg';
-import GlobeIcon from '../../Assets/svg/globeIcon.svg';
-import UserBtnIcon from '../../Assets/svg/userBtnIcon.svg';
-import UserBtnIcon2 from '../../Assets/svg/userBtnIcon2.svg';
-import PlusCircle from '../../Assets/svg/plus-circle.svg';
-import InfoIcon from '../../Assets/svg/infoIcon.svg';
-import TriAngleIcon from '../../Assets/svg/triangleIcon.svg';
+import { CrossIcon, ShareIcon2, GlobeIcon, UserBtnIcon, UserBtnIcon2, PlusCircle, InfoIcon, TriAngleIcon } from '../../Icons';
 
 const UserDiv = styled.div`
   &:hover {
@@ -66,7 +59,7 @@ const ManageViewModal = (props) => {
                       </div>
                     </div>
                     <div>
-                      <button onClick={() => setIsOpen(false)} className='hover:bg-[#363A3D] w-[26px] h-[40px]'><img src={crossIcon} alt='close' /></button>
+                      <button onClick={() => setIsOpen(false)} className='hover:bg-[#363A3D] w-[26px] h-[40px]'><img src={CrossIcon} alt='close' /></button>
                     </div>
                   </Dialog.Title>
 
@@ -143,7 +136,7 @@ const ManageViewModal = (props) => {
                             boxShadow: '0px 8px 12px 0px rgba(255, 255, 255, 0.08) inset, 0px 24px 24px -16px rgba(0, 0, 0, 0.12), 16px 24px 64px -24px rgba(255, 255, 255, 0.08) inset'
                           }}
                         >
-                          <img src={ShareIcon} className='w-[16px] mr-2' alt=''/>
+                          <img src={ShareIcon2} className='w-[16px] mr-2' alt=''/>
                           <span>Copy Link</span>
                         </button>
                       </div>

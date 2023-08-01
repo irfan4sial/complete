@@ -65,11 +65,17 @@ const Sidebar = ({ active, setActive }) => {
                             <img src={square} alt='square' className='shadow-[0px_10px_15px_-3px_#B6F09C29]' />
                             <p className='text-[#E8E9E9] text-[14px] font-semibold'>Lesson App</p>
                         </div>
-                        <div className='flex cursor-pointer items-center gap-[16px] px-[16px] mt-[24px]'>
+                        <div 
+                          className='flex cursor-pointer items-center gap-[16px] px-[16px] mt-[24px]'
+                          onClick={() => navigate('/gpt-hub')}
+                        >
                             <img src={triangle} alt='triangle' className='shadow-[0px_10px_15px_-3px_#B6F09C29]' />
                             <p className='text-[#E8E9E9] text-[14px] font-semibold'>GPT-Hub</p>
                         </div>
-                        <div className='flex cursor-pointer items-center gap-[16px] px-[16px] mt-[29px]'>
+                        <div 
+                          className='flex cursor-pointer items-center gap-[16px] px-[16px] mt-[29px]'
+                          onClick={() => navigate("/personal-ai")}
+                        >
                             <img src={square2} alt='square' className='shadow-[0px_10px_15px_-3px_#B6F09C29]' />
                             <p className='text-[#E8E9E9] text-[14px] font-semibold'>Personal AI-GPT</p>
                         </div>

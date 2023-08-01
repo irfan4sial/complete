@@ -1,14 +1,9 @@
 import { Dialog, Transition } from '@headlessui/react'
 import React, { Fragment, useState } from 'react'
 import { Tab } from '@headlessui/react'
-import crossIcon from '../../Assets/svg/crossIcon.svg';
-import CommentTabIcon from '../../Assets/svg/comment-tab-icon.svg';
-import ImagesTabIcon from '../../Assets/svg/images-tab-icon.svg';
-import ChatTabIcon from '../../Assets/svg/chat-tab-icon.svg';
-import Apr1 from '../../Assets/svg/12_apr_1.svg';
-import Apr2 from '../../Assets/svg/12_apr_2.svg';
-import Apr3 from '../../Assets/svg/12_apr_3.svg';
-import Apr3_1 from '../../Assets/svg/3_apr_1.svg';
+
+import { CrossIcon, AprImage1, AprImage2, AprImage3, CommentTabIcon, ImagesTabIcon, ChatTabIcon, Apr3_1  } from '../../Icons';
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -81,7 +76,7 @@ const TabsModal = (props) => {
                       </div>
                     </div>
                     <div>
-                      <button onClick={() => setIsOpen(false)} className='hover:bg-[#363A3D] w-[26px] h-[40px]'><img src={crossIcon} alt='close' /></button>
+                      <button onClick={() => setIsOpen(false)} className='hover:bg-[#363A3D] w-[26px] h-[40px]'><img src={CrossIcon} alt='close' /></button>
                     </div>
                   </Dialog.Title>
 
@@ -120,9 +115,9 @@ const TabsModal = (props) => {
                             <div className='flex flex-col'>
                               <p className='text-[#9B9C9E] text-[16px] font-[500]'>12 Apr</p>
                               <div className='flex flex-row mt-1'>
-                                <img src={Apr1} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
-                                <img src={Apr2} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
-                                <img src={Apr3} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
+                                <img src={AprImage1} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
+                                <img src={AprImage2} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
+                                <img src={AprImage3} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
                               </div>
                             </div>
                             <div className='flex flex-col mt-8'>
@@ -134,7 +129,7 @@ const TabsModal = (props) => {
                             <div className='flex flex-col mt-8'>
                               <p className='text-[#9B9C9E] text-[16px] font-[500]'>2 Apr</p>
                               <div className='flex flex-row mt-1'>
-                                <img src={Apr1} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
+                                <img src={AprImage1} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
                                 <img src={Apr3_1} alt='' className='w-[197px] h-[185px] m-[12px_8px_0px_0px]' />
                               </div>
                             </div>
