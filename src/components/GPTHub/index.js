@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Sidebar from '../Sidebar/Sidebar';
-import { GPTHubButtonMenu } from './Math/data';
+import { GPTHubButtonMenu } from './data';
 import { 
   BellIcon, ClockIcon, ShareIcon, MenuIcon, MicIcon, SendIcon
 } from '../Icons';
